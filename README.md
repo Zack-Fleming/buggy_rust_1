@@ -2,10 +2,13 @@
 
 10 functions in `src/lib.rs` have logic errors. The tests in `tests/tests.rs` will highlight how each function is wrong.
 
+> [!TIP]
+> [VS Code](https://code.visualstudio.com/) offers a great toolset for Rust development. Details [here](https://code.visualstudio.>com/docs/languages/rust).
+
 ### How to set up the assignment.
 
-1. Install Rust. Follow the instructions [here](https://www.rust-lang.org/tools/install).
-2. Clone this repository to your computer. If needed, instructions can be found [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+1. [Install Rust](https://www.rust-lang.org/tools/install). Windows users may additionally need to [install C++ build tools](https://learn.microsoft.com/en-us/windows/dev-environment/rust/setup).
+2. Clone this repository to your computer. If needed, [instructions here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 3. Navigate into cloned repo and run `cargo test` in your command line or terminal. Test output will look something like this:
 
 ```shell

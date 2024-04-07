@@ -1,11 +1,12 @@
 # Bugged Rust Functions
 
-10 functions in `src/lib.rs` have logic errors. The tests in `tests/tests.rs` will highlight how each function is wrong.
-
 > [!TIP]
 > [VS Code](https://code.visualstudio.com/) offers a great toolset for Rust development. Details [here](https://code.visualstudio.>com/docs/languages/rust).
 
-### How to set up the assignment.
+#### 10 functions in `src/lib.rs` have logic errors. The tests in `tests/tests.rs` will highlight how each function is wrong.
+
+
+#### How to set up the assignment.
 
 1. [Install Rust](https://www.rust-lang.org/tools/install). Windows users may additionally need to [install C++ build tools](https://learn.microsoft.com/en-us/windows/dev-environment/rust/setup).
 2. Clone this repository to your computer. If needed, [instructions here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
@@ -114,7 +115,7 @@ test result: FAILED. 1 passed; 10 failed; 0 ignored; 0 measured; 0 filtered out;
 error: test failed, to rerun pass `--test tests`
 ```
 
-4. For each failure, fix the logic error in `src/lib.rs`. Don't change anything in `tests/tests.rs`! Save and re-run `cargo test` to confirm that you see <strong>ok</strong> instead of <strong>FAILED</strong>. When you've corrected all 10 errors, your `cargo test` output should look like this:
+4. For each failure, in your editor of choice, fix the logic error in `src/lib.rs`. Don't change anything in `tests/tests.rs`! Save and re-run `cargo test` to confirm that you see <strong>ok</strong> instead of <strong>FAILED</strong>. When you've corrected all 10 errors, your `cargo test` output should look like this:
 
 ```shell
 $ cargo test

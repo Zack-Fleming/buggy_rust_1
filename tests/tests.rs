@@ -25,7 +25,7 @@ mod tests {
     }
 
     #[test]
-    fn negate_the_array_test() {
+    fn invert_the_array_test() {
         
         let mut test_array: [i32; 4] = [10,11,12,13];
 

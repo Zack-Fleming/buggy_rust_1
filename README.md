@@ -28,7 +28,7 @@ test tests::add_numbers_within_text_test ... FAILED
 test tests::fizz_the_odds_test ... FAILED
 test tests::get_second_two_elements_test ... FAILED
 test tests::get_circle_area_test ... FAILED
-test tests::negate_the_array_test ... FAILED
+test tests::invert_the_array_test ... FAILED
 test tests::try_divide_test_two ... FAILED
 test tests::string_length_excluding_whitespace ... FAILED
 test tests::try_divide_test_one ... FAILED
@@ -63,8 +63,8 @@ assertion `left == right` failed
   left: 12.566370614359172
  right: 0.0
 
----- tests::negate_the_array_test stdout ----
-thread 'tests::negate_the_array_test' panicked at tests/tests.rs:34:9:
+---- tests::invert_the_array_test stdout ----
+thread 'tests::invert_the_array_test' panicked at tests/tests.rs:34:9:
 assertion `left == right` failed
   left: [-10, -11, -12, -13]
  right: [9, 10, 11, 12]
@@ -103,7 +103,7 @@ failures:
     tests::fizz_the_odds_test
     tests::get_circle_area_test
     tests::get_second_two_elements_test
-    tests::negate_the_array_test
+    tests::invert_the_array_test
     tests::point_quadrant_test
     tests::read_name_from_file_test
     tests::string_length_excluding_whitespace
@@ -134,7 +134,7 @@ test tests::add_numbers_within_text_test ... ok
 test tests::get_circle_area_test ... ok
 test tests::fizz_the_odds_test ... ok
 test tests::get_second_two_elements_test ... ok
-test tests::negate_the_array_test ... ok
+test tests::invert_the_array_test ... ok
 test tests::point_quadrant_test ... ok
 test tests::string_length_excluding_whitespace ... ok
 test tests::try_divide_test_one ... ok

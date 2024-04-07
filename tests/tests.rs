@@ -57,7 +57,7 @@ mod tests {
 
         let test_text = "h3r3's A s3nt3nc3 11";
    
-        assert_eq!(15, add_numbers_within_text(test_text));
+        assert_eq!(17, add_numbers_within_text(test_text));
         
     }
 

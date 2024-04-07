@@ -1,6 +1,6 @@
 # Bugged Rust Functions
 
-10 functions in `src/lib.rs` have logic errors. The tests in `tests/tests.rs` will highlight how the function is wrong.
+10 functions in `src/lib.rs` have logic errors. The tests in `tests/tests.rs` will highlight how each function is wrong.
 
 ### How to set up the assignment.
 
@@ -111,4 +111,38 @@ test result: FAILED. 1 passed; 10 failed; 0 ignored; 0 measured; 0 filtered out;
 error: test failed, to rerun pass `--test tests`
 ```
 
-4. For each failure fix the logic error. Save and re-run to confirm that you see <strong>ok</strong> instead of <strong>FAILED</strong>.
+4. For each failure, fix the logic error in `src/lib.rs`. Don't change anything in `tests/tests.rs`! Save and re-run `cargo test` to confirm that you see <strong>ok</strong> instead of <strong>FAILED</strong>. When you've corrected all 10 errors, your `cargo test` output should look like this:
+
+```shell
+$ cargo test
+   Compiling buggy_rust_1 v0.1.0 (/Users/tommahoney/Documents/GitHub/buggy_rust_1)
+    Finished test [unoptimized + debuginfo] target(s) in 0.11s
+     Running unittests src/lib.rs (target/debug/deps/buggy_rust_1-bb8581e2afd8396a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/tests.rs (target/debug/deps/tests-742fa85216031325)
+
+running 11 tests
+test tests::add_numbers_within_text_test ... ok
+test tests::get_circle_area_test ... ok
+test tests::fizz_the_odds_test ... ok
+test tests::get_second_two_elements_test ... ok
+test tests::negate_the_array_test ... ok
+test tests::point_quadrant_test ... ok
+test tests::string_length_excluding_whitespace ... ok
+test tests::try_divide_test_one ... ok
+test tests::read_name_from_file_test ... ok
+test tests::try_divide_test_two ... ok
+test tests::two_plus_two_is_four ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests buggy_rust_1
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+```

@@ -28,9 +28,9 @@ pub fn get_second_two_elements(input: &[usize]) -> &[usize] {
 }
 
 /* 3. -----------------------------------------------------------------------*/
-// Invert the array of i32s (positive to negative, negative to positive)
+// Negate the array of i32s (positive to negative, negative to positive)
 
-pub fn invert_the_array(input: &mut [i32]){
+pub fn negate_the_array(input: &mut [i32]){
 
     input.iter_mut().for_each(|num| *num += -1)
 

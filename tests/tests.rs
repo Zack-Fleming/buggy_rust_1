@@ -82,7 +82,7 @@ mod tests {
         let name = read_name_from_file();
    
         match name {
-            Ok(name) => assert_eq!(name, "your name here"),
+            Ok(name) => assert_eq!(name, "Zackery Fleming"),
             Err(err) => panic!("Error reading file: {:?}", err),
         }
         
